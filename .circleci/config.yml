@@ -4,7 +4,7 @@ orbs:
   eb: circleci/aws-elastic-beanstalk@2.0.1
   aws-cli: circleci/aws-cli@2.0.3
 workflow:
-  build&deploy:
+  deploy:
     filters:
       branches:
         only: main
