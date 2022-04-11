@@ -1,4 +1,4 @@
-import * as dotenv from "dotenv";
+import * as dotenv from 'dotenv';
 dotenv.config();
 
 export const config = {
@@ -8,10 +8,10 @@ export const config = {
   port: Number(process.env.PORT),
   dbport: Number(process.env.DBPORT),
   host: process.env.POSTGRES_HOST,
-  dialect: "postgres",
+  dialect: 'postgres',
   aws_region: process.env.AWS_REGION,
   aws_profile: process.env.AWS_PROFILE,
-  aws_media_bucket: process.env.AWS_BUCKET, 
+  aws_media_bucket: process.env.AWS_BUCKET,
   jwt: {
     secret: process.env.JWT_SECRET,
   },

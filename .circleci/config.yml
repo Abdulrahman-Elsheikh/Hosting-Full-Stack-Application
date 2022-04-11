@@ -5,13 +5,13 @@ orbs:
   aws-cli: circleci/aws-cli@2.0.3
 workflow:
   build&deploy:
-     filters:
-        branches:
-           only: master
+    filters:
+      branches:
+        only: main
 jobs:
-  build:
+  deploy:
     docker:
-      - image: "cimg/base:stable"
+      - image: 'cimg/base:stable'
     steps:
       - node/install:
           node-version: '16.13'
@@ -40,4 +40,3 @@ jobs:
       - run:
           name: Front-End Deploy
           command: npm run frontend:deploy
-          
